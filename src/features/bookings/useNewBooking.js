@@ -8,7 +8,7 @@ export function useNewBooking() {
     mutationFn: createBookingAPI,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["bookings"] });
-      toast.success("New booking succesfully created ");
+      toast.success("New booking succesfully created 👍🏻");
     },
     onError: (err) => {
       console.log("ERROR", err);

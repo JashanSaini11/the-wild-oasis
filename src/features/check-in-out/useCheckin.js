@@ -15,7 +15,7 @@ export function useCheckin() {
         ...breakfast,
       }),
     onSuccess: (data) => {
-      toast.success(`Booking #${data.id} sucessfully checked in`);
+      toast.success(`Booking #${data.id} sucessfully checked in 🚀`);
       queryClient.invalidateQueries({ active: true });
       navigate("/");
     },
